@@ -19,6 +19,18 @@
 | **Tanvi Chib** | **ET24BTCO206** | **Sarvajanik College of Engineering & Technology, Surat** | **Computer Engineering** | 💻 Frontend / UI & Integration |
 | **JOGI PRANAV BHARAT** | **250763107012** | **Shree Swami Atmanand Saraswati Institute of Technology, Surat** | **Computer Engineering** | 🧠 AI / System Development |
 
+
+🌐 Live Demo
+
+🧭 PravasiShram AI
+Explore the working prototype
+https://yashbadgujar15.github.io/NavaSankalp-PravasiShram-AI/
+
+💻 GitHub Repository
+
+NavaSankalp — PravasiShram AI
+https://github.com/YashBadgujar15/NavaSankalp-PravasiShram-AI#-pravasishram-ai
+
 ---
 
 # 🎯 Problem Statement
@@ -469,16 +481,6 @@ Explore stronger privacy-preserving computation and governance mechanisms for fu
 📡 Assisted & Offline Workflows
 Extend support for low-connectivity environments through assisted service channels.
 
-🌐 Live Demo
-
-🧭 PravasiShram AI
-Explore the working prototype
-👉 GitHub Pages URL will be added here after deployment.
-
-💻 GitHub Repository
-
-NavaSankalp — PravasiShram AI
-👉 GitHub repository URL will be added here.
 
 🏆 Hackathon Information
 
