@@ -400,6 +400,9 @@ document.addEventListener("DOMContentLoaded", () => {
   // 10. Universal Modal Click-outside & Escape
   initModalListeners();
 
+  // 11. Responsive Mobile Navigation Menu
+  initMobileNavigation();
+
   // Initial welcome toast
   setTimeout(() => {
     showToast("PravasiShram AI Active", "Consent-driven migration intelligence demonstration ready.", "info");
@@ -1788,3 +1791,49 @@ function initModalListeners() {
     }
   });
 }
+
+// =========================================================
+// 17. RESPONSIVE MOBILE NAVIGATION
+// =========================================================
+
+function initMobileNavigation() {
+  const btnMobile = document.getElementById("btnMobileMenu");
+  const navMenu = document.getElementById("navMenu");
+  if (!btnMobile || !navMenu) return;
+
+  btnMobile.addEventListener("click", (e) => {
+    e.stopPropagation();
+    const isOpen = navMenu.classList.toggle("open");
+    btnMobile.innerHTML = isOpen ? '<i class="fa-solid fa-xmark"></i>' : '<i class="fa-solid fa-bars"></i>';
+    btnMobile.setAttribute("aria-expanded", isOpen ? "true" : "false");
+    btnMobile.setAttribute("aria-label", isOpen ? "Close navigation menu" : "Open navigation menu");
+  });
+
+  navMenu.querySelectorAll(".nav-item").forEach(link => {
+    link.addEventListener("click", () => {
+      navMenu.classList.remove("open");
+      btnMobile.innerHTML = '<i class="fa-solid fa-bars"></i>';
+      btnMobile.setAttribute("aria-expanded", "false");
+      btnMobile.setAttribute("aria-label", "Open navigation menu");
+    });
+  });
+
+  document.addEventListener("click", (e) => {
+    if (!navMenu.contains(e.target) && !btnMobile.contains(e.target) && navMenu.classList.contains("open")) {
+      navMenu.classList.remove("open");
+      btnMobile.innerHTML = '<i class="fa-solid fa-bars"></i>';
+      btnMobile.setAttribute("aria-expanded", "false");
+      btnMobile.setAttribute("aria-label", "Open navigation menu");
+    }
+  });
+
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape" && navMenu.classList.contains("open")) {
+      navMenu.classList.remove("open");
+      btnMobile.innerHTML = '<i class="fa-solid fa-bars"></i>';
+      btnMobile.setAttribute("aria-expanded", "false");
+      btnMobile.setAttribute("aria-label", "Open navigation menu");
+    }
+  });
+}
+
