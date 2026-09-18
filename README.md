@@ -96,11 +96,15 @@ PravasiShram AI follows an **event-based migration intelligence approach**.
 🏛️ Welfare Planning
 
 The prototype demonstrates the complete journey from a voluntary worker check-in to aggregated planning intelligence.
+
 👷 Worker Experience
 The worker interface is designed to keep migration reporting simple.
+
 Example Voice Input
 "Main Patna se Surat textile kaam ke liye aaya hoon."
+
 The prototype extracts:
+
 Field	Extracted Information
 📍 Origin	Patna, Bihar
 🎯 Destination	Surat, Gujarat
@@ -110,8 +114,10 @@ Field	Extracted Information
 
 
 The worker can review the extracted information before providing consent.
+
 🎙️ Speech-to-Intent Prototype
 The prototype includes a Speech-to-Intent experience using browser-based speech recognition.
+
 🎙️ Worker Speaks
        ↓
 📝 Live Transcript
@@ -127,14 +133,20 @@ The prototype includes a Speech-to-Intent experience using browser-based speech 
 ✅ Consent
        ↓
 📊 Migration Event
+
 The prototype supports example inputs in:
+
 - 🇬🇧 English
 - 🇮🇳 Hindi
 - 🇬🇺 Gujarati
+
 If the worker does not mention a sector or purpose, the system does not invent missing information.
+
 🔐 Consent & Privacy
 Privacy is a core part of the proposed architecture.
+
 Privacy-by-Design
+
 Voluntary Check-in
        ↓
 Explicit Consent
@@ -148,14 +160,19 @@ Identifier Separation
 Aggregated Intelligence
        ↓
 Planning Insights
+
 The prototype does NOT implement:
+
 - ❌ Continuous GPS tracking
 - ❌ 24/7 personal location monitoring
 - ❌ Unnecessary personal-location exposure
 - ❌ Hidden background tracking
+
 The concept focuses on voluntary migration events rather than continuous personal surveillance.
+
 🗺️ Migration Intelligence
 Individual migration events can be transformed into aggregated corridor-level intelligence.
+
 Patna → Surat
 Mumbai → Surat
 Bhavnagar → Surat
@@ -170,19 +187,26 @@ Active Corridors
 Migration Heatmap
        ↓
 Planning Signals
+
 The prototype's map interface demonstrates how authorities could explore migration corridors.
+
 📊 Migration Corridor Analytics
 The intelligence layer can demonstrate:
+
 - 📍 Origin-destination corridors
 - 🔄 Inter-state migration
 - 🏙️ Intra-state migration
 - 🏭 Employment-linked movement
 - 📈 Corridor activity
 - 🔮 Emerging movement signals
+
 The current prototype uses synthetic demonstration data.
+
 It does not claim access to live government migration datasets.
+
 🔮 Corridor Forecast
 PravasiShram AI includes a prototype Corridor Forecast experience.
+
 Historical / Aggregated Signals
               ↓
        Corridor Analysis
@@ -192,10 +216,14 @@ Historical / Aggregated Signals
        Predictive Signal
               ↓
        Planning Support
+
 Forecast outputs in the prototype are demonstration planning signals, not live government forecasts.
+
 🏛️ Authority Command Center
 The Authority Command Center brings migration intelligence into one planning interface.
+
 Authority Flow
+
 📊 Migration Overview
         ↓
 🗺️ Active Corridors
@@ -207,10 +235,15 @@ Authority Flow
 🧪 What-if Scenario
         ↓
 🏛️ Planning Response
+
 The interface demonstrates how aggregated migration information could support planning discussions.
+
 🧪 What-if Migration Scenario
+
 The prototype includes an interactive What-if Migration Scenario.
+
 Authorities can adjust a hypothetical migration-volume input and observe changes in planning indicators.
+
 Hypothetical Migration Inflow
             ↓
     Corridor Activity
@@ -220,24 +253,32 @@ Hypothetical Migration Inflow
     Service Capacity
             ↓
  Emerging Corridor Signal
+
 The simulation uses deterministic prototype rules and synthetic data.
 Planning scenario — not a live government forecast. Prototype simulation using synthetic demonstration data.
 
 🌐 Multilingual & Inclusive Access
+
 The concept is designed for workers with different levels of digital access.
+
 Proposed Access Channels
+
 - 📱 Mobile Web
 - 🎙️ Speech / IVR-style interaction
 - 💬 Structured SMS
 - 🏢 Assisted CSC / Service Desk
+
 Supported Interface Languages
+
 - 🇬🇧 English
 - 🇮🇳 Hindi
 - 🇬🇺 Gujarati
 - 🇮🇳 Marathi
 - 🇮🇳 Bengali
+
 Low-Data Experience
 The interface includes a low-data mode concept to support users with limited connectivity.
+
 🧠 Core Intelligence Pipeline
                  👷 MIGRANT WORKER
                         │
@@ -269,8 +310,11 @@ The interface includes a low-data mode concept to support users with limited con
               └─────────┬──────────┘
                         ▼
                 🏛️ PLANNING INSIGHT
+
 ⭐ Key Features
+
 Feature	Purpose
+
 🎙️ Voice Check-in	Simplifies migration-event submission
 ✅ Explicit Consent	Keeps participation voluntary
 🔐 Privacy-by-Design	Minimises unnecessary personal tracking
@@ -285,6 +329,7 @@ Feature	Purpose
 
 
 💎 Key Innovation
+
 1️⃣ Track the Event — Not the Person
 The central concept replaces continuous personal tracking with voluntary migration-event reporting.
 Continuous Personal Tracking
@@ -292,6 +337,7 @@ Continuous Personal Tracking
            ↓
 Voluntary Migration Event
            ✅
+
 2️⃣ Privacy Before Intelligence
 Consent
    ↓
@@ -301,6 +347,7 @@ Aggregation
    ↓
 Intelligence
 Privacy is considered before migration intelligence is generated.
+
 3️⃣ Worker → Intelligence → Planning
 👷 Worker
    ↓
@@ -311,12 +358,16 @@ Privacy is considered before migration intelligence is generated.
 🔮 Planning Signal
    ↓
 🏛️ Welfare Planning
+
 4️⃣ Voice-First Check-in
 Workers can provide migration information through a simple conversational input instead of navigating a complex form.
+
 5️⃣ Interactive Planning Simulation
 The What-if scenario demonstrates how planners could explore hypothetical changes in migration volume.
+
 🔒 Demonstration Transparency
 The current prototype uses synthetic demonstration data.
+
 The prototype does not claim verified live connectivity to:
 - 📊 Live government databases
 - 🏛️ Live eShram systems
@@ -325,8 +376,11 @@ The prototype does not claim verified live connectivity to:
 - 🏥 ESIC systems
 - 📡 Live government APIs
 - 📍 Continuous GPS infrastructure
+
 Any future deployment would require appropriate institutional integration, security controls, privacy safeguards, consent mechanisms and verified data sources.
+
 🏗️ Proposed System Architecture
+
                        👷 WORKER
                            │
                            ▼
@@ -371,6 +425,7 @@ Any future deployment would require appropriate institutional integration, secur
                            │
                            ▼
                     🏛️ PLANNING
+
 ⚙️ Technology Stack
 🌐 Frontend
 - HTML5
@@ -378,41 +433,57 @@ Any future deployment would require appropriate institutional integration, secur
 - JavaScript
 - Responsive Web Design
 - SVG-based visualisation
+
 🧠 Intelligence
 - Speech-to-Intent Prototype
 - Migration-event extraction
 - Aggregated corridor analytics
 - Predictive demonstration logic
 - Scenario simulation
+
 🛠️ Development
 - Git
 - GitHub
 - GitHub Pages
 - Visual Studio Code
+
 🚀 Future Scope
 🔗 eShram Integration
 Potential integration with verified eShram workflows subject to appropriate institutional and technical requirements.
+
 🤖 Advanced Prediction
 Evaluate machine-learning models using validated historical migration data.
+
 🗺️ Larger Migration Intelligence
 Develop broader corridor-level intelligence using appropriately governed migration-event datasets.
+
 🎙️ Expanded Language Support
 Support additional Indian languages and voice-access workflows.
+
 📊 Welfare Planning Intelligence
 Use aggregated migration signals to support resource and service planning.
+
 🔐 Advanced Privacy Technologies
 Explore stronger privacy-preserving computation and governance mechanisms for future deployment.
+
 📡 Assisted & Offline Workflows
 Extend support for low-connectivity environments through assisted service channels.
+
 🌐 Live Demo
+
 🧭 PravasiShram AI
 Explore the working prototype
 👉 GitHub Pages URL will be added here after deployment.
+
 💻 GitHub Repository
+
 NavaSankalp — PravasiShram AI
 👉 GitHub repository URL will be added here.
+
 🏆 Hackathon Information
+
 	Details
+
 🎯 Event	Digital Shram Sankalp 2026
 🏛️ Organiser	Ministry of Labour & Employment
 📌 Problem Statement	Problem Statement 1
@@ -428,6 +499,8 @@ Protect the Person.
 Plan Better Welfare.
 
 PravasiShram AI explores how consent-driven migration intelligence can help transform voluntary migration events into aggregated planning insights while keeping privacy at the center of the design.
+
+
 🧭 Built by Team NavaSankalp
 PravasiShram AI · Consent-Driven Migration Intelligence
 Digital Shram Sankalp 2026 · Problem Statement 1
