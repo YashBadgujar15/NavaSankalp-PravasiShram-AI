@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PravasiShram AI | Consent-Driven Migration Intelligence for Better Welfare Planning</title>
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Outfit:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body style="background: #060A18; margin: 0; padding: 1.5rem 0;">
+  <section id="forecast" class="section-wrap">
+      <div class="content-container">
+        <div class="section-header">
+          <span class="section-category"><i class="fa-solid fa-chart-line"></i> PREDICTIVE SIGNALS</span>
+          <h2 class="section-title">Where could migration move next?</h2>
+          <p class="section-subtitle">The prototype demonstrates how historical check-in patterns could be used to identify potential movement trends.</p>
+        </div>
+
+        <div class="forecast-split-grid">
+          <!-- Left: Time-Series Chart & Legend -->
+          <div class="forecast-chart-card">
+            <div class="fcc-header">
+              <div>
+                <h4 style="font-size:1.15rem; color:#fff; font-weight:700;">Inter-State Movement Volume: Observed vs Projected</h4>
+                <span style="font-size:0.8rem; color:var(--text-muted);">Demonstration Time-Series (Jan 2026 - Sep 2026)</span>
+              </div>
+              <div style="display:flex; align-items:center; gap:0.5rem; flex-wrap:wrap;">
+                <select id="forecastCorridorSelect" class="form-select" style="padding:0.35rem 0.65rem; font-size:0.8rem; background:rgba(255,255,255,0.06); border:1px solid rgba(255,255,255,0.15); border-radius:var(--radius-sm); color:#fff;">
+                  <option value="all" selected>All Corridors (Macro Aggregate)</option>
+                  <option value="corridor-1">Bihar → Gujarat (Textile)</option>
+                  <option value="corridor-2">UP → Maharashtra (Construction)</option>
+                  <option value="corridor-3">Odisha → Gujarat (Diamond & Loom)</option>
+                  <option value="corridor-4">Rajasthan → Gujarat (Industrial)</option>
+                  <option value="corridor-5">WB → Maharashtra (Garments)</option>
+                </select>
+                <span class="demo-chip"><i class="fa-solid fa-sparkles"></i> PROTOTYPE PREDICTION</span>
+              </div>
+            </div>
+
+            <div class="chart-viewport-frame">
+              <canvas id="forecastChartCanvas"></canvas>
+            </div>
+
+            <div class="fcc-legend-row">
+              <div class="fcc-legend-items">
+                <span class="fcc-legend-item">
+                  <span class="fcc-color-bar observed"></span> Observed Activity (Synthetic Check-ins)
+                </span>
+                <span class="fcc-legend-item">
+                  <span class="fcc-color-bar projected"></span> Prototype Forecast (Autoregressive Pattern)
+                </span>
+              </div>
+              <span style="font-size:0.75rem; color:var(--text-muted);"><i class="fa-solid fa-circle-info"></i> Prototype prediction using synthetic demonstration data</span>
+            </div>
+          </div>
+
+          <!-- Right: Analytical Explanation & Planning Insights -->
+          <div class="forecast-insights-card">
+            <div class="fic-header">
+              <span class="section-category" style="margin-bottom:0.4rem;"><i class="fa-solid fa-brain"></i> MOVEMENT INTELLIGENCE</span>
+              <h3 style="font-size:1.3rem; font-weight:800; color:#fff;">Predictive Planning Signals</h3>
+              <p style="font-size:0.85rem; color:var(--text-secondary); margin-top:0.3rem;">How aggregate event densities could inform destination welfare allocation before worker arrival.</p>
+            </div>
+
+            <div class="fic-insights-list">
+              <div class="fic-item">
+                <div class="fic-icon"><i class="fa-solid fa-arrow-trend-up text-saffron"></i></div>
+                <div>
+                  <h5 style="color:#fff; font-size:0.92rem; font-weight:700;">Pre-Monsoon & Post-Harvest Peak</h5>
+                  <p style="font-size:0.82rem; color:var(--text-secondary); margin-top:0.2rem;">Synthetic models show historic surges toward Surat and Mumbai textile clusters between June and August (+18% to +24% volume increase).</p>
+                </div>
+              </div>
+
+              <div class="fic-item">
+                <div class="fic-icon"><i class="fa-solid fa-truck-ramp-box text-blue"></i></div>
+                <div>
+                  <h5 style="color:#fff; font-size:0.92rem; font-weight:700;">Proactive Ration & Healthcare Buffering</h5>
+                  <p style="font-size:0.82rem; color:var(--text-secondary); margin-top:0.2rem;">Enables destination civil supplies desks to provision additional One Nation One Ration Card (ONORC) grain quotas and mobile ESIC health check units.</p>
+                </div>
+              </div>
+
+              <div class="fic-item">
+                <div class="fic-icon"><i class="fa-solid fa-shield-check text-emerald"></i></div>
+                <div>
+                  <h5 style="color:#fff; font-size:0.92rem; font-weight:700;">Privacy-Preserving Aggregate Analytics</h5>
+                  <p style="font-size:0.82rem; color:var(--text-secondary); margin-top:0.2rem;">All projections are calculated on k-anonymized cluster counts. No continuous personal tracking in this prototype; worker identities and live device locations are never inferred.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="fic-action-box">
+              <div style="font-size:0.78rem; font-weight:700; color:var(--emerald-light); text-transform:uppercase; letter-spacing:0.5px;">
+                <i class="fa-solid fa-compass"></i> Proposed Authority Action
+              </div>
+              <p style="font-size:0.82rem; color:#e2e8f0; margin-top:0.3rem;">
+                Trigger inter-state coordination memo between Bihar & Gujarat labour commissioners 30 days prior to peak season.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  <script src="js/app.js"></script>
+</body>
+</html>

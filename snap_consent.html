@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PravasiShram AI | Consent-Driven Migration Intelligence for Better Welfare Planning</title>
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Outfit:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body style="background: #060A18; margin: 0; padding: 1.5rem 0;">
+  <section id="consent" class="section-wrap alt-surface">
+      <div class="content-container">
+        <div class="section-header">
+          <span class="section-category"><i class="fa-solid fa-handshake-angle"></i> PRIVACY-FIRST CONSENT</span>
+          <h2 class="section-title" id="i18n-consent-title">Your movement. Your consent.</h2>
+          <p class="section-subtitle">A transparent social contract where citizens maintain absolute ownership of their mobility events.</p>
+        </div>
+
+        <div class="consent-center-card">
+          <!-- Live Status Banner -->
+          <div class="consent-status-banner" id="consentStatusBanner">
+            <div class="csb-left">
+              <i class="csb-icon fa-solid fa-circle-check" id="csbIcon"></i>
+              <div>
+                <div class="csb-title" id="csbTitle">Consent Status: ACTIVE</div>
+                <div class="csb-sub" id="csbSub">Your migration event information is shared strictly for aggregated welfare intelligence.</div>
+              </div>
+            </div>
+            <button class="btn-secondary" id="btnGiveConsent" style="padding:0.4rem 0.9rem; font-size:0.8rem;">
+              <i class="fa-solid fa-rotate"></i> Re-Verify
+            </button>
+          </div>
+
+          <!-- What / Why / What NOT Grid -->
+          <div class="consent-qa-grid">
+            <div class="qa-card">
+              <div class="qa-q"><i class="fa-solid fa-share-nodes text-saffron"></i> What will be shared?</div>
+              <div class="qa-a">
+                Only the episodic migration event: origin state/district, destination cluster, broad sector, and check-in timestamp. No continuous coordinates.
+              </div>
+            </div>
+            <div class="qa-card">
+              <div class="qa-q"><i class="fa-solid fa-bullseye text-blue"></i> Why?</div>
+              <div class="qa-a">
+                To create aggregated migration intelligence that can help inform destination social welfare infrastructure, ration portability, and transit desks.
+              </div>
+            </div>
+            <div class="qa-card">
+              <div class="qa-q"><i class="fa-solid fa-shield-xmark text-emerald"></i> What will NOT happen?</div>
+              <div class="qa-a">
+                No continuous background GPS tracking. No continuous personal tracking in this prototype. No automatic welfare entitlement changes from this prototype.
+              </div>
+            </div>
+          </div>
+
+          <!-- Toggles -->
+          <div class="consent-toggles-list">
+            <div class="consent-toggle-item">
+              <div class="cti-text">
+                <h5>Migration Event Sharing</h5>
+                <p>Permit sharing the origin-to-destination transit event for macro corridor analysis.</p>
+              </div>
+              <label class="switch">
+                <input type="checkbox" checked id="toggleEventSharing">
+                <span class="slider"></span>
+              </label>
+            </div>
+
+            <div class="consent-toggle-item">
+              <div class="cti-text">
+                <h5>Purpose-Limited Planning Use</h5>
+                <p>Restrict data access exclusively to registered labour welfare planning desks.</p>
+              </div>
+              <label class="switch">
+                <input type="checkbox" checked id="togglePurposeLimit">
+                <span class="slider"></span>
+              </label>
+            </div>
+
+            <div class="consent-toggle-item">
+              <div class="cti-text">
+                <h5>Aggregated Analytics Participation</h5>
+                <p>Include this event in k-anonymized regional heatmap models (threshold n &gt; 50).</p>
+              </div>
+              <label class="switch">
+                <input type="checkbox" checked id="toggleAggAnalytics">
+                <span class="slider"></span>
+              </label>
+            </div>
+          </div>
+
+          <!-- Actions Row -->
+          <div class="consent-actions-row">
+            <div style="display:flex; gap:0.85rem; align-items:center;">
+              <button class="btn-secondary" id="btnReviewDataUse">
+                <i class="fa-solid fa-file-shield"></i> Review Data Use
+              </button>
+              <span style="font-size:0.75rem; color:var(--text-muted);">
+                DPDP Act 2023 Principles • Purpose Specification
+              </span>
+            </div>
+            <button class="btn-withdraw" id="btnWithdrawConsent">
+              <i class="fa-solid fa-ban"></i> Withdraw Consent
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+  <script src="js/app.js"></script>
+</body>
+</html>

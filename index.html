@@ -1,0 +1,1374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PravasiShram AI | Consent-Driven Migration Intelligence for Better Welfare Planning</title>
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Outfit:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- =========================================================
+       TOP APEX BAR & ACCESSIBILITY TOOLS
+  ========================================================= -->
+  <div class="apex-top-bar">
+    <div class="apex-top-container">
+      <div class="apex-left-badge">
+        <span class="demo-chip"><i class="fa-solid fa-flask"></i> CONCEPT PROTOTYPE</span>
+        <span>Digital Shram Sankalp Ideation Hackathon • Problem Statement 1</span>
+      </div>
+      <div class="apex-right-tools">
+        <div class="tool-group">
+          <button class="tool-btn" id="btnToggleContrast" title="Toggle High Contrast Display"><i class="fa-solid fa-circle-half-stroke"></i> Contrast</button>
+          <button class="tool-btn" id="btnToggleLowData" title="Toggle Low-Data Mode"><i class="fa-solid fa-gauge-simple-high"></i> Low-Data Mode</button>
+        </div>
+        <div class="tool-group">
+          <label for="langSelector" style="font-size:0.72rem; color:var(--text-muted);"><i class="fa-solid fa-language"></i></label>
+          <select class="lang-select" id="langSelector">
+            <option value="en" selected>English</option>
+            <option value="hi">हिंदी (Hindi)</option>
+            <option value="gu">ગુજરાતી (Gujarati)</option>
+            <option value="mr">मराठी (Marathi)</option>
+            <option value="bn">বাংলা (Bengali)</option>
+          </select>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- =========================================================
+       MAIN NAVIGATION BAR
+  ========================================================= -->
+  <header class="main-navbar">
+    <div class="navbar-container">
+      <a href="#hero" class="nav-brand">
+        <div class="brand-symbol"><i class="fa-solid fa-shield-halved"></i></div>
+        <div class="brand-meta">
+          <div class="brand-title">
+            PRAVASISHRAM <span style="color:var(--saffron);">AI</span>
+          </div>
+          <div class="brand-tagline" id="i18n-brand-tag">Track the migration event, not the person.</div>
+        </div>
+      </a>
+
+      <nav class="nav-menu" id="navMenu">
+        <a href="#hero" class="nav-item active"><i class="fa-solid fa-house"></i> Home</a>
+        <a href="#story" class="nav-item">Why Event-Tracking?</a>
+        <a href="#worker" class="nav-item">Worker Check-in</a>
+        <a href="#consent" class="nav-item">Consent Center</a>
+        <a href="#intelligence" class="nav-item">Intelligence</a>
+        <a href="#forecast" class="nav-item">Forecast</a>
+        <a href="#authority" class="nav-item">Command Center</a>
+        <a href="#privacy" class="nav-item">Privacy by Design</a>
+      </nav>
+
+      <div style="display:flex; align-items:center; gap:0.75rem;">
+        <a href="#demo" class="nav-cta-btn"><i class="fa-solid fa-play"></i> Launch Demo</a>
+        <button class="mobile-menu-toggle" id="btnMobileMenu" aria-label="Toggle navigation menu"><i class="fa-solid fa-bars"></i></button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- =========================================================
+         1. HERO SECTION
+    ========================================================= -->
+    <section id="hero" class="hero-section">
+      <div class="content-container">
+        <div class="hero-grid">
+          <div class="hero-content-side">
+            <div class="hero-badge-row">
+              <span class="hero-tag saffron"><i class="fa-solid fa-fingerprint"></i> DEMONSTRATION MODE</span>
+              <span class="hero-tag"><i class="fa-solid fa-lock"></i> No continuous GPS tracking</span>
+            </div>
+            
+            <h1 class="hero-headline">
+              <span id="i18n-hero-title">Understand where migration is moving.</span>
+              <span class="headline-highlight"> Without constantly tracking people.</span>
+            </h1>
+
+            <p class="hero-subtext" id="i18n-hero-sub">
+              PravasiShram AI transforms voluntary migration check-ins into privacy-preserving, aggregated intelligence that can help inform welfare planning.
+            </p>
+
+            <div class="hero-cta-group">
+              <a href="#worker" class="btn-primary" id="i18n-btn-journey">
+                <i class="fa-solid fa-person-walking-arrow-right"></i> Experience the Worker Journey
+              </a>
+              <a href="#intelligence" class="btn-secondary" id="i18n-btn-intel">
+                <i class="fa-solid fa-chart-network"></i> Explore Migration Intelligence
+              </a>
+            </div>
+
+            <div class="hero-trust-strip">
+              <div class="trust-item"><i class="fa-solid fa-circle-check"></i> Voluntary Check-in</div>
+              <div class="trust-item"><i class="fa-solid fa-circle-check"></i> Purpose Limitation</div>
+              <div class="trust-item"><i class="fa-solid fa-circle-check"></i> Privacy-by-Design Architecture</div>
+            </div>
+          </div>
+
+          <!-- Hero Animated Migration Visual Card -->
+          <div class="hero-visual-frame">
+            <div class="visual-top-bar">
+              <div class="visual-title">
+                <span class="live-indicator"></span>
+                <span>Active Inter-State Migration Flow</span>
+              </div>
+              <span style="font-size:0.72rem; color:var(--text-muted);">Synthetic demonstration data</span>
+            </div>
+
+            <div class="hero-map-svg-wrap">
+              <svg class="hero-svg-canvas" viewBox="0 0 500 380" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <!-- Abstract India Shape Background -->
+                <path d="M210,40 Q260,30 290,70 Q320,120 340,160 Q380,200 400,250 Q360,310 320,330 Q270,370 250,370 Q210,310 180,260 Q130,220 150,160 Q170,100 210,40 Z" fill="rgba(37, 99, 235, 0.08)" stroke="rgba(255, 255, 255, 0.12)" stroke-width="1.5" stroke-dasharray="4 4" />
+                
+                <!-- Corridors -->
+                <!-- Bihar -> Gujarat -->
+                <path d="M 330 180 Q 250 170 170 230" stroke="#f97316" stroke-width="3" stroke-dasharray="6 4" fill="none" />
+                <!-- UP -> Maharashtra -->
+                <path d="M 290 170 Q 230 220 190 290" stroke="#60a5fa" stroke-width="2.5" stroke-dasharray="6 4" fill="none" />
+                <!-- Odisha -> Gujarat -->
+                <path d="M 320 250 Q 240 260 170 230" stroke="#34d399" stroke-width="2.5" stroke-dasharray="6 4" fill="none" />
+                <!-- Rajasthan -> Gujarat -->
+                <path d="M 190 140 Q 170 180 170 230" stroke="#f59e0b" stroke-width="2" stroke-dasharray="4 4" fill="none" />
+                <!-- WB -> Maharashtra -->
+                <path d="M 360 210 Q 280 270 200 300" stroke="#a855f7" stroke-width="2" stroke-dasharray="4 4" fill="none" />
+
+                <!-- Anchor Points -->
+                <circle cx="330" cy="180" r="6" fill="#f97316" /> <!-- Patna -->
+                <circle cx="170" cy="230" r="7" fill="#10b981" /> <!-- Surat -->
+                <circle cx="290" cy="170" r="5" fill="#60a5fa" /> <!-- Varanasi -->
+                <circle cx="190" cy="290" r="6" fill="#10b981" /> <!-- Mumbai -->
+                <circle cx="320" cy="250" r="5" fill="#34d399" /> <!-- Ganjam -->
+                <circle cx="360" cy="210" r="5" fill="#a855f7" /> <!-- Murshidabad -->
+
+                <!-- Node Labels -->
+                <text x="342" y="184" fill="#cbd5e1" font-size="10" font-family="Plus Jakarta Sans" font-weight="600">Patna, BR</text>
+                <text x="110" y="234" fill="#34d399" font-size="11" font-family="Plus Jakarta Sans" font-weight="700">Surat, GJ</text>
+                <text x="125" y="295" fill="#38bdf8" font-size="10" font-family="Plus Jakarta Sans" font-weight="600">Mumbai, MH</text>
+              </svg>
+            </div>
+
+            <div class="corridor-pills-row" id="heroCorridorPills">
+              <!-- Dynamically populated -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         2. PROBLEM -> SOLUTION STORY (RAMESH'S JOURNEY)
+    ========================================================= -->
+    <section id="story" class="section-wrap alt-surface">
+      <div class="content-container">
+        <div class="section-header">
+          <span class="section-category"><i class="fa-solid fa-lightbulb"></i> CORE PRODUCT PHILOSOPHY</span>
+          <h2 class="section-title">Migration is dynamic. Welfare planning needs timely signals.</h2>
+          <p class="section-subtitle">Understanding seasonal and economic mobility without encroaching upon citizen dignity or constitutional privacy.</p>
+        </div>
+
+        <div class="story-card-glass">
+          <div class="story-split">
+            <!-- Left: Ramesh Profile -->
+            <div class="worker-profile-card">
+              <div class="wpc-header">
+                <div class="wpc-avatar"><i class="fa-solid fa-user-tie"></i></div>
+                <div>
+                  <div class="wpc-name">RAMESH</div>
+                  <div class="wpc-role">Unorganized Migrant Weaver • Demonstration Profile</div>
+                </div>
+              </div>
+
+              <div class="wpc-grid">
+                <div class="wpc-item">
+                  <span class="wpc-label">ORIGIN</span>
+                  <span class="wpc-val">Bihar (Patna District)</span>
+                </div>
+                <div class="wpc-item">
+                  <span class="wpc-label">DESTINATION</span>
+                  <span class="wpc-val">Surat, Gujarat</span>
+                </div>
+                <div class="wpc-item">
+                  <span class="wpc-label">PURPOSE</span>
+                  <span class="wpc-val">Employment</span>
+                </div>
+                <div class="wpc-item">
+                  <span class="wpc-label">SECTOR</span>
+                  <span class="wpc-val">Powerloom Textile</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Right: The Contrast Narrative -->
+            <div class="story-narrative">
+              <h3>Instead of continuously tracking Ramesh:</h3>
+              <p>
+                Continuous location tracking can create privacy, security and battery concerns. Workers do not want a live GPS beacon following them 24/7.
+              </p>
+              <p>
+                <strong>PravasiShram AI captures a single, voluntary migration event with clear purpose limitation.</strong> No continuous personal tracking in this prototype. Once verified and minimised, personal identifiers are severed, and only aggregated corridor volume is shared with social welfare planners.
+              </p>
+
+              <div class="contrast-box">
+                <div class="cb-col bad">
+                  <div class="cb-title"><i class="fa-solid fa-xmark"></i> Continuous Location Tracking</div>
+                  <ul>
+                    <li><i class="fa-solid fa-minus"></i> 24/7 background GPS tracking</li>
+                    <li><i class="fa-solid fa-minus"></i> Severe battery and data consumption</li>
+                    <li><i class="fa-solid fa-minus"></i> Invasion of worker personal privacy</li>
+                  </ul>
+                </div>
+                <div class="cb-col good">
+                  <div class="cb-title"><i class="fa-solid fa-check"></i> Migration Event Intelligence</div>
+                  <ul>
+                    <li><i class="fa-solid fa-check"></i> Simple voluntary 30-sec check-in</li>
+                    <li><i class="fa-solid fa-check"></i> Data minimisation & disassociated ID</li>
+                    <li><i class="fa-solid fa-check"></i> Granular consent with 1-click withdrawal</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- The 7-Step Conceptual Flow Diagram -->
+        <div class="flow-diagram-container">
+          <div class="flow-title-row">
+            <h4>From Individual Check-in to Macro Welfare Planning</h4>
+            <span style="font-size:0.8rem; color:var(--text-muted);">The architectural lifecycle of a consented migration event</span>
+          </div>
+
+          <div class="flow-nodes-track">
+            <div class="flow-node">
+              <div class="fn-icon"><i class="fa-solid fa-user"></i></div>
+              <span class="fn-label">Worker</span>
+              <span class="fn-sub">Voluntary user</span>
+            </div>
+            <i class="fa-solid fa-arrow-right flow-arrow"></i>
+
+            <div class="flow-node highlight">
+              <div class="fn-icon"><i class="fa-solid fa-handshake"></i></div>
+              <span class="fn-label">Consent</span>
+              <span class="fn-sub">Purpose-limited</span>
+            </div>
+            <i class="fa-solid fa-arrow-right flow-arrow"></i>
+
+            <div class="flow-node">
+              <div class="fn-icon"><i class="fa-solid fa-location-crosshairs"></i></div>
+              <span class="fn-label">Simple Check-in</span>
+              <span class="fn-sub">Speech or Form</span>
+            </div>
+            <i class="fa-solid fa-arrow-right flow-arrow"></i>
+
+            <div class="flow-node">
+              <div class="fn-icon"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
+              <span class="fn-label">Event Extraction</span>
+              <span class="fn-sub">Origin & Dest</span>
+            </div>
+            <i class="fa-solid fa-arrow-right flow-arrow"></i>
+
+            <div class="flow-node highlight">
+              <div class="fn-icon"><i class="fa-solid fa-shield-halved"></i></div>
+              <span class="fn-label">Privacy Layer</span>
+              <span class="fn-sub">Data Minimisation</span>
+            </div>
+            <i class="fa-solid fa-arrow-right flow-arrow"></i>
+
+            <div class="flow-node">
+              <div class="fn-icon"><i class="fa-solid fa-chart-line"></i></div>
+              <span class="fn-label">Aggregated Signal</span>
+              <span class="fn-sub">Corridor macro flow</span>
+            </div>
+            <i class="fa-solid fa-arrow-right flow-arrow"></i>
+
+            <div class="flow-node">
+              <div class="fn-icon"><i class="fa-solid fa-landmark"></i></div>
+              <span class="fn-label">Welfare Planning</span>
+              <span class="fn-sub">Proactive allocation</span>
+            </div>
+          </div>
+
+          <div class="flow-banner-quote">
+            <i class="fa-solid fa-quote-left"></i> We capture movement information with consent. No continuous personal tracking in this prototype.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         3. WORKER EXPERIENCE (MOBILE-FIRST CARD)
+    ========================================================= -->
+    <section id="worker" class="section-wrap">
+      <div class="content-container">
+        <div class="section-header">
+          <span class="section-category"><i class="fa-solid fa-mobile-screen"></i> MOBILE-FIRST INTERFACE</span>
+          <h2 class="section-title" id="i18n-worker-title">Update your migration</h2>
+          <div style="background:rgba(249,115,22,0.09); border:1px solid rgba(249,115,22,0.3); border-radius:var(--radius-md); padding:0.85rem 1.25rem; margin:0 auto 1.25rem auto; max-width:620px;">
+            <div style="font-size:1.05rem; font-weight:700; color:#fff;">Tell us where you moved and why.</div>
+            <div style="font-size:0.92rem; color:var(--saffron-light); font-weight:600; margin-top:0.25rem;">आप कहाँ से कहाँ गए और किस काम के लिए? बस बोलकर बताएं।</div>
+          </div>
+          <p class="section-subtitle">Simplified check-in designed for field accessibility. Voice-first interaction with zero typing barrier.</p>
+        </div>
+
+        <div class="worker-exp-layout">
+          <!-- Mobile Mockup Phone -->
+          <div class="phone-mockup-frame">
+            <div class="phone-notch"></div>
+            <div class="phone-screen">
+              <div class="ps-header">
+                <div class="ps-title"><i class="fa-solid fa-passport" style="color:var(--saffron);"></i> Migration Check-in</div>
+                <span class="demo-chip" style="font-size:0.65rem;">DEMO</span>
+              </div>
+
+              <div style="background:rgba(249,115,22,0.08); border:1px solid rgba(249,115,22,0.25); border-radius:var(--radius-sm); padding:0.6rem 0.75rem; margin-bottom:1rem; text-align:center;">
+                <div style="font-size:0.86rem; font-weight:700; color:#fff;">Tell us where you moved and why.</div>
+                <div style="font-size:0.75rem; color:var(--saffron-light); margin-top:0.2rem;">आप कहाँ से कहाँ गए और किस काम के लिए? बस बोलकर बताएं।</div>
+              </div>
+
+              <div class="ps-tabs">
+                <button class="ps-tab active" id="tabCheckinVoice"><i class="fa-solid fa-microphone"></i> Voice Check-in</button>
+                <button class="ps-tab" id="tabCheckinManual"><i class="fa-solid fa-pen-to-square"></i> Manual Form</button>
+              </div>
+
+              <!-- Voice Check-in Pane -->
+              <div class="voice-checkin-pane" id="paneVoice">
+                <div class="voice-bubble-prompt" id="i18n-voice-prompt">
+                  Press the mic and say: "Main Patna se Surat textile kaam ke liye aaya hoon."
+                </div>
+
+                <button class="big-mic-button" id="btnBigMic" title="Click to speak or simulate speech">
+                  <i class="fa-solid fa-microphone"></i>
+                </button>
+
+                <div class="mic-status-text" id="micStatusText">Click mic to record or select a preset below</div>
+
+                <!-- Speech / Demo Recognized Transcript Display -->
+                <div class="voice-transcript-card" id="voiceTranscriptContainer" style="display:none; background:rgba(10,16,36,0.92); border:1px solid rgba(249,115,22,0.35); border-radius:var(--radius-sm); padding:0.75rem 0.85rem; margin:0.85rem 0; text-align:left;">
+                  <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:0.35rem;">
+                    <span id="transcriptLabel" style="font-size:0.72rem; font-weight:700; text-transform:uppercase; letter-spacing:0.5px; color:var(--emerald-light);"><i class="fa-solid fa-quote-left"></i> You said:</span>
+                    <span id="transcriptStatusBadge" style="font-size:0.68rem; color:var(--text-muted); background:rgba(255,255,255,0.06); padding:0.1rem 0.45rem; border-radius:var(--radius-full);">Speech Recognized</span>
+                  </div>
+                  <div id="voiceTranscriptText" style="font-size:0.88rem; color:#fff; font-weight:600; line-height:1.45; word-break:break-word;">
+                    "Main Patna se Surat textile kaam ke liye aaya hoon."
+                  </div>
+                </div>
+
+                <div class="quick-voice-chips">
+                  <span style="font-size:0.7rem; color:var(--text-muted); font-weight:700;">TEST DEMO SCENARIOS:</span>
+                  <button class="qvc-btn" data-sample="Main Patna se Surat textile kaam ke liye aaya hoon.">
+                    <span>"Main Patna se Surat textile kaam ke liye aaya hoon."</span>
+                    <i class="fa-solid fa-play" style="font-size:0.65rem;"></i>
+                  </button>
+                  <button class="qvc-btn" data-sample="हम बनारस से मुंबई निर्माण कार्य के लिए आए हैं।">
+                    <span>"Varanasi ➔ Mumbai (Construction)"</span>
+                    <i class="fa-solid fa-play" style="font-size:0.65rem;"></i>
+                  </button>
+                  <button class="qvc-btn" data-sample="હું ભાવનગરથી સુરત હીરા ઘસવાના કામ માટે આવ્યો છું.">
+                    <span>"Bhavnagar ➔ Surat (Diamond)"</span>
+                    <i class="fa-solid fa-play" style="font-size:0.65rem;"></i>
+                  </button>
+                </div>
+              </div>
+
+              <!-- Manual Check-in Pane -->
+              <div class="manual-form-grid" id="paneManual" style="display:none;">
+                <form id="manualCheckinForm">
+                  <div class="form-group">
+                    <label for="manualOrigin">Origin (City, State)</label>
+                    <input type="text" id="manualOrigin" class="form-input" value="Patna, Bihar" required>
+                  </div>
+                  <div class="form-group">
+                    <label for="manualDest">Destination (City, State)</label>
+                    <input type="text" id="manualDest" class="form-input" value="Surat, Gujarat" required>
+                  </div>
+                  <div class="form-group">
+                    <label for="manualSector">Primary Trade / Sector</label>
+                    <select id="manualSector" class="form-select">
+                      <option value="Textile" selected>Textile & Handloom</option>
+                      <option value="Construction">Construction & Masonry</option>
+                      <option value="Manufacturing">Manufacturing & Fabrication</option>
+                      <option value="Diamond & Loom">Diamond Polishing</option>
+                      <option value="Logistics">Logistics & Warehousing</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <label for="manualPurpose">Purpose of Movement</label>
+                    <select id="manualPurpose" class="form-select">
+                      <option value="Employment" selected>Employment / Job</option>
+                      <option value="Skill Training">Skill Training Placement</option>
+                      <option value="Family Relocation">Seasonal Work Relocation</option>
+                    </select>
+                  </div>
+                  <button type="submit" class="btn-primary" style="width:100%; justify-content:center; margin-top:0.5rem;">
+                    Extract Migration Event
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+
+          <!-- Extraction & Confirmation Showcase -->
+          <div class="worker-showcase-panel">
+            <div class="ai-pipeline-card">
+              <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:1rem;">
+                <span class="section-category" style="margin-bottom:0;"><i class="fa-solid fa-brain"></i> Speech-to-Intent Prototype</span>
+                <span style="font-size:0.75rem; color:var(--text-muted);">Prototype Extraction</span>
+              </div>
+
+              <div class="pipeline-stepper">
+                <div class="p-step active" id="stepListening">
+                  <div class="p-circle"><i class="fa-solid fa-microphone"></i></div>
+                  <span>Listening...</span>
+                </div>
+                <div class="p-step" id="stepUnderstanding">
+                  <div class="p-circle"><i class="fa-solid fa-brain"></i></div>
+                  <span>Understanding...</span>
+                </div>
+                <div class="p-step" id="stepProtecting">
+                  <div class="p-circle"><i class="fa-solid fa-shield-halved"></i></div>
+                  <span>Protecting...</span>
+                </div>
+                <div class="p-step" id="stepReady">
+                  <div class="p-circle"><i class="fa-solid fa-check"></i></div>
+                  <span>Ready</span>
+                </div>
+              </div>
+
+              <div style="font-size:0.85rem; color:var(--text-secondary); margin-bottom:1rem;">
+                <strong>Extracted Migration Parameters (Editable):</strong>
+              </div>
+
+              <div class="extracted-entities-grid">
+                <div class="entity-chip">
+                  <span class="ec-label">Origin</span>
+                  <input type="text" class="ec-input" id="entityOrigin" value="Patna, Bihar">
+                </div>
+                <div class="entity-chip">
+                  <span class="ec-label">Destination</span>
+                  <input type="text" class="ec-input" id="entityDest" value="Surat, Gujarat">
+                </div>
+                <div class="entity-chip">
+                  <span class="ec-label">Primary Sector</span>
+                  <input type="text" class="ec-input" id="entitySector" value="Textile">
+                </div>
+                <div class="entity-chip">
+                  <span class="ec-label">Purpose</span>
+                  <input type="text" class="ec-input" id="entityPurpose" value="Employment">
+                </div>
+                <div class="entity-chip" style="grid-column: span 2;">
+                  <span class="ec-label">Migration Type</span>
+                  <input type="text" class="ec-input" id="entityType" value="Inter-state">
+                </div>
+              </div>
+
+              <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:1rem;">
+                <button class="btn-primary" id="btnConfirmCheckin">
+                  <i class="fa-solid fa-circle-check"></i> Confirm & Give Consent
+                </button>
+                <span style="font-size:0.75rem; color:var(--text-muted);">
+                  <i class="fa-solid fa-lock"></i> PII is stripped prior to corridor aggregation
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         4. CONSENT CENTER
+    ========================================================= -->
+    <section id="consent" class="section-wrap alt-surface">
+      <div class="content-container">
+        <div class="section-header">
+          <span class="section-category"><i class="fa-solid fa-handshake-angle"></i> PRIVACY-FIRST CONSENT</span>
+          <h2 class="section-title" id="i18n-consent-title">Your movement. Your consent.</h2>
+          <p class="section-subtitle">A transparent social contract where citizens maintain absolute ownership of their mobility events.</p>
+        </div>
+
+        <div class="consent-center-card">
+          <!-- Live Status Banner -->
+          <div class="consent-status-banner" id="consentStatusBanner">
+            <div class="csb-left">
+              <i class="csb-icon fa-solid fa-circle-check" id="csbIcon"></i>
+              <div>
+                <div class="csb-title" id="csbTitle">Consent Status: ACTIVE</div>
+                <div class="csb-sub" id="csbSub">Your migration event information is shared strictly for aggregated welfare intelligence.</div>
+              </div>
+            </div>
+            <button class="btn-secondary" id="btnGiveConsent" style="padding:0.4rem 0.9rem; font-size:0.8rem;">
+              <i class="fa-solid fa-rotate"></i> Re-Verify
+            </button>
+          </div>
+
+          <!-- What / Why / What NOT Grid -->
+          <div class="consent-qa-grid">
+            <div class="qa-card">
+              <div class="qa-q"><i class="fa-solid fa-share-nodes text-saffron"></i> What will be shared?</div>
+              <div class="qa-a">
+                Only the episodic migration event: origin state/district, destination cluster, broad sector, and check-in timestamp. No continuous coordinates.
+              </div>
+            </div>
+            <div class="qa-card">
+              <div class="qa-q"><i class="fa-solid fa-bullseye text-blue"></i> Why?</div>
+              <div class="qa-a">
+                To create aggregated migration intelligence that can help inform destination social welfare infrastructure, ration portability, and transit desks.
+              </div>
+            </div>
+            <div class="qa-card">
+              <div class="qa-q"><i class="fa-solid fa-shield-xmark text-emerald"></i> What will NOT happen?</div>
+              <div class="qa-a">
+                No continuous background GPS tracking. No continuous personal tracking in this prototype. No automatic welfare entitlement changes from this prototype.
+              </div>
+            </div>
+          </div>
+
+          <!-- Toggles -->
+          <div class="consent-toggles-list">
+            <div class="consent-toggle-item">
+              <div class="cti-text">
+                <h5>Migration Event Sharing</h5>
+                <p>Permit sharing the origin-to-destination transit event for macro corridor analysis.</p>
+              </div>
+              <label class="switch">
+                <input type="checkbox" checked id="toggleEventSharing">
+                <span class="slider"></span>
+              </label>
+            </div>
+
+            <div class="consent-toggle-item">
+              <div class="cti-text">
+                <h5>Purpose-Limited Planning Use</h5>
+                <p>Restrict data access exclusively to registered labour welfare planning desks.</p>
+              </div>
+              <label class="switch">
+                <input type="checkbox" checked id="togglePurposeLimit">
+                <span class="slider"></span>
+              </label>
+            </div>
+
+            <div class="consent-toggle-item">
+              <div class="cti-text">
+                <h5>Aggregated Analytics Participation</h5>
+                <p>Include this event in k-anonymized regional heatmap models (threshold n &gt; 50).</p>
+              </div>
+              <label class="switch">
+                <input type="checkbox" checked id="toggleAggAnalytics">
+                <span class="slider"></span>
+              </label>
+            </div>
+          </div>
+
+          <!-- Actions Row -->
+          <div class="consent-actions-row">
+            <div style="display:flex; gap:0.85rem; align-items:center;">
+              <button class="btn-secondary" id="btnReviewDataUse">
+                <i class="fa-solid fa-file-shield"></i> Review Data Use
+              </button>
+              <span style="font-size:0.75rem; color:var(--text-muted);">
+                DPDP Act 2023 Principles • Purpose Specification
+              </span>
+            </div>
+            <button class="btn-withdraw" id="btnWithdrawConsent">
+              <i class="fa-solid fa-ban"></i> Withdraw Consent
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         5. WORKER MIGRATION TIMELINE
+    ========================================================= -->
+    <section id="timeline" class="section-wrap">
+      <div class="content-container">
+        <div class="section-header">
+          <span class="section-category"><i class="fa-solid fa-timeline"></i> VERIFIED MIGRATION HISTORY</span>
+          <h2 class="section-title">Worker Migration Timeline</h2>
+          <p class="section-subtitle">A citizen-facing audit record showing how episodic check-ins form an identifiable journey over time.</p>
+        </div>
+
+        <div style="text-align:center; margin-bottom:2rem;">
+          <span class="demo-chip"><i class="fa-solid fa-circle-info"></i> Synthetic demonstration timeline</span>
+        </div>
+
+        <div class="timeline-wrap">
+          <div class="timeline-track-line"></div>
+          <div id="timelineEventsList">
+            <!-- Dynamically Rendered by JS -->
+          </div>
+        </div>
+
+        <div style="display:flex; justify-content:center; gap:1rem; margin-top:2rem;">
+          <a href="#worker" class="btn-primary" style="font-size:0.88rem; padding:0.65rem 1.25rem;">
+            <i class="fa-solid fa-plus"></i> Update Location
+          </a>
+          <a href="#consent" class="btn-secondary" style="font-size:0.88rem; padding:0.65rem 1.25rem;">
+            <i class="fa-solid fa-shield-halved"></i> Review Consent
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         6. MIGRATION INTELLIGENCE (SVG MAP & CORRIDORS)
+    ========================================================= -->
+    <section id="intelligence" class="section-wrap alt-surface">
+      <div class="content-container">
+        <div class="section-header">
+          <span class="section-category"><i class="fa-solid fa-satellite-dish"></i> MACRO CORRIDOR MAPPING</span>
+          <h2 class="section-title">Migration Intelligence</h2>
+          <p class="section-subtitle">From individual check-ins to aggregated movement patterns. Real-time corridor telemetry without tracking individuals.</p>
+        </div>
+
+        <div class="intel-grid">
+          <!-- Left: Interactive Map -->
+          <div class="map-control-card">
+            <!-- Filter Controls -->
+            <div class="map-filters-bar">
+              <div class="form-group">
+                <label for="filterState">Filter Origin/Dest</label>
+                <select id="filterState" class="form-select" style="padding:0.4rem 0.6rem; font-size:0.8rem;">
+                  <option value="all">All States</option>
+                  <option value="bihar">Bihar</option>
+                  <option value="gujarat">Gujarat</option>
+                  <option value="uttar pradesh">Uttar Pradesh</option>
+                  <option value="maharashtra">Maharashtra</option>
+                  <option value="odisha">Odisha</option>
+                  <option value="rajasthan">Rajasthan</option>
+                  <option value="west bengal">West Bengal</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="filterSector">Trade / Sector</label>
+                <select id="filterSector" class="form-select" style="padding:0.4rem 0.6rem; font-size:0.8rem;">
+                  <option value="all">All Sectors</option>
+                  <option value="textile">Textile & Loom</option>
+                  <option value="construction">Construction</option>
+                  <option value="diamond">Diamond Polishing</option>
+                  <option value="manufacturing">Manufacturing</option>
+                  <option value="garments">Garments</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="filterType">Migration Type</label>
+                <select id="filterType" class="form-select" style="padding:0.4rem 0.6rem; font-size:0.8rem;">
+                  <option value="all">All Types</option>
+                  <option value="inter-state">Inter-state</option>
+                  <option value="intra-state">Intra-state</option>
+                </select>
+              </div>
+            </div>
+
+            <!-- SVG India Canvas -->
+            <div class="map-viewport-frame">
+              <svg id="indiaMapSvg" viewBox="0 0 600 680" width="100%" height="100%" style="display:block;">
+                <defs>
+                  <linearGradient id="gradCorridor" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" stop-color="#f97316" />
+                    <stop offset="100%" stop-color="#2563eb" />
+                  </linearGradient>
+                </defs>
+
+                <!-- Base India Map Outline (Synthetic Vector Geometry) -->
+                <path d="M 270 40 L 310 90 L 340 140 L 390 180 L 460 210 L 510 240 L 530 290 L 480 320 L 460 360 L 420 420 L 380 480 L 330 550 L 290 620 L 260 550 L 220 480 L 170 420 L 150 340 L 140 260 L 180 180 L 210 120 Z" fill="#0b1329" stroke="rgba(255, 255, 255, 0.18)" stroke-width="1.8" />
+                
+                <!-- Regional Boundaries Representation -->
+                <!-- North / Gangetic -->
+                <path d="M 210 120 L 270 140 L 350 180 L 320 230 L 250 200 Z" fill="rgba(37, 99, 235, 0.08)" stroke="rgba(255, 255, 255, 0.06)" />
+                <!-- West (Gujarat / Rajasthan) -->
+                <path d="M 140 260 L 230 250 L 210 390 L 150 340 Z" fill="rgba(249, 115, 22, 0.08)" stroke="rgba(255, 255, 255, 0.06)" />
+                <!-- Central / Maharashtra -->
+                <path d="M 210 390 L 340 370 L 320 490 L 220 480 Z" fill="rgba(16, 185, 129, 0.08)" stroke="rgba(255, 255, 255, 0.06)" />
+
+                <!-- Dynamic Bezier Corridors Group -->
+                <g id="svgCorridorArcs"></g>
+
+                <!-- State Capital / Hub Anchors -->
+                <g id="svgCityNodes">
+                  <!-- Patna -->
+                  <circle cx="410" cy="310" r="5" fill="#f97316" />
+                  <text x="420" y="315" fill="#e2e8f0" font-size="11" font-weight="700">Patna</text>
+
+                  <!-- Surat -->
+                  <circle cx="200" cy="400" r="7" fill="#10b981" />
+                  <text x="145" y="405" fill="#34d399" font-size="12" font-weight="800">Surat</text>
+
+                  <!-- Mumbai -->
+                  <circle cx="210" cy="450" r="6" fill="#38bdf8" />
+                  <text x="150" y="455" fill="#93c5fd" font-size="11" font-weight="700">Mumbai</text>
+
+                  <!-- Varanasi -->
+                  <circle cx="370" cy="320" r="5" fill="#f59e0b" />
+                  <text x="315" y="325" fill="#cbd5e1" font-size="10">Varanasi</text>
+
+                  <!-- Ahmedabad -->
+                  <circle cx="190" cy="360" r="5" fill="#60a5fa" />
+                  <text x="115" y="365" fill="#cbd5e1" font-size="10">Ahmedabad</text>
+
+                  <!-- Ganjam -->
+                  <circle cx="390" cy="440" r="5" fill="#f97316" />
+                  <text x="400" y="445" fill="#cbd5e1" font-size="10">Ganjam</text>
+
+                  <!-- Jaipur -->
+                  <circle cx="230" cy="280" r="5" fill="#f59e0b" />
+                  <text x="185" y="285" fill="#cbd5e1" font-size="10">Jaipur</text>
+
+                  <!-- Murshidabad -->
+                  <circle cx="460" cy="350" r="5" fill="#a855f7" />
+                  <text x="470" y="355" fill="#cbd5e1" font-size="10">Murshidabad</text>
+                </g>
+              </svg>
+
+              <div class="map-legend-overlay">
+                <div><span class="legend-dot high"></span> High Flow Corridor (&gt;1,000)</div>
+                <div><span class="legend-dot med"></span> Moderate (500 - 1,000)</div>
+                <div><span class="legend-dot low"></span> Emerging (&lt;500)</div>
+                <span class="demo-chip" style="margin-left:auto; font-size:0.62rem;">SYNTHETIC DEMO</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right: Corridor Detail Panel -->
+          <div class="corridor-drawer-card" id="corridorDetailPanel">
+            <!-- Populated dynamically by JS -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         7. CORRIDOR FORECAST (TIME-SERIES CHART)
+    ========================================================= -->
+    <section id="forecast" class="section-wrap">
+      <div class="content-container">
+        <div class="section-header">
+          <span class="section-category"><i class="fa-solid fa-chart-line"></i> PREDICTIVE SIGNALS</span>
+          <h2 class="section-title">Where could migration move next?</h2>
+          <p class="section-subtitle">The prototype demonstrates how historical check-in patterns could be used to identify potential movement trends.</p>
+        </div>
+
+        <div class="forecast-split-grid">
+          <!-- Left: Time-Series Chart & Legend -->
+          <div class="forecast-chart-card">
+            <div class="fcc-header">
+              <div>
+                <h4 style="font-size:1.15rem; color:#fff; font-weight:700;">Inter-State Movement Volume: Observed vs Projected</h4>
+                <span style="font-size:0.8rem; color:var(--text-muted);">Demonstration Time-Series (Jan 2026 - Sep 2026)</span>
+              </div>
+              <div style="display:flex; align-items:center; gap:0.5rem; flex-wrap:wrap;">
+                <select id="forecastCorridorSelect" class="form-select" style="padding:0.35rem 0.65rem; font-size:0.8rem; background:rgba(255,255,255,0.06); border:1px solid rgba(255,255,255,0.15); border-radius:var(--radius-sm); color:#fff;">
+                  <option value="all" selected>All Corridors (Macro Aggregate)</option>
+                  <option value="corridor-1">Bihar → Gujarat (Textile)</option>
+                  <option value="corridor-2">UP → Maharashtra (Construction)</option>
+                  <option value="corridor-3">Odisha → Gujarat (Diamond & Loom)</option>
+                  <option value="corridor-4">Rajasthan → Gujarat (Industrial)</option>
+                  <option value="corridor-5">WB → Maharashtra (Garments)</option>
+                </select>
+                <span class="demo-chip"><i class="fa-solid fa-sparkles"></i> PROTOTYPE PREDICTION</span>
+              </div>
+            </div>
+
+            <div class="chart-viewport-frame">
+              <canvas id="forecastChartCanvas"></canvas>
+            </div>
+
+            <div class="fcc-legend-row">
+              <div class="fcc-legend-items">
+                <span class="fcc-legend-item">
+                  <span class="fcc-color-bar observed"></span> Observed Activity (Synthetic Check-ins)
+                </span>
+                <span class="fcc-legend-item">
+                  <span class="fcc-color-bar projected"></span> Prototype Forecast (Autoregressive Pattern)
+                </span>
+              </div>
+              <span style="font-size:0.75rem; color:var(--text-muted);"><i class="fa-solid fa-circle-info"></i> Prototype prediction using synthetic demonstration data</span>
+            </div>
+          </div>
+
+          <!-- Right: Analytical Explanation & Planning Insights -->
+          <div class="forecast-insights-card">
+            <div class="fic-header">
+              <span class="section-category" style="margin-bottom:0.4rem;"><i class="fa-solid fa-brain"></i> MOVEMENT INTELLIGENCE</span>
+              <h3 style="font-size:1.3rem; font-weight:800; color:#fff;">Predictive Planning Signals</h3>
+              <p style="font-size:0.85rem; color:var(--text-secondary); margin-top:0.3rem;">How aggregate event densities could inform destination welfare allocation before worker arrival.</p>
+            </div>
+
+            <div class="fic-insights-list">
+              <div class="fic-item">
+                <div class="fic-icon"><i class="fa-solid fa-arrow-trend-up text-saffron"></i></div>
+                <div>
+                  <h5 style="color:#fff; font-size:0.92rem; font-weight:700;">Pre-Monsoon & Post-Harvest Peak</h5>
+                  <p style="font-size:0.82rem; color:var(--text-secondary); margin-top:0.2rem;">Synthetic models show historic surges toward Surat and Mumbai textile clusters between June and August (+18% to +24% volume increase).</p>
+                </div>
+              </div>
+
+              <div class="fic-item">
+                <div class="fic-icon"><i class="fa-solid fa-truck-ramp-box text-blue"></i></div>
+                <div>
+                  <h5 style="color:#fff; font-size:0.92rem; font-weight:700;">Proactive Ration & Healthcare Buffering</h5>
+                  <p style="font-size:0.82rem; color:var(--text-secondary); margin-top:0.2rem;">Enables destination civil supplies desks to provision additional One Nation One Ration Card (ONORC) grain quotas and mobile ESIC health check units.</p>
+                </div>
+              </div>
+
+              <div class="fic-item">
+                <div class="fic-icon"><i class="fa-solid fa-shield-check text-emerald"></i></div>
+                <div>
+                  <h5 style="color:#fff; font-size:0.92rem; font-weight:700;">Privacy-Preserving Aggregate Analytics</h5>
+                  <p style="font-size:0.82rem; color:var(--text-secondary); margin-top:0.2rem;">All projections are calculated on k-anonymized cluster counts. No continuous personal tracking in this prototype; worker identities and live device locations are never inferred.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="fic-action-box">
+              <div style="font-size:0.78rem; font-weight:700; color:var(--emerald-light); text-transform:uppercase; letter-spacing:0.5px;">
+                <i class="fa-solid fa-compass"></i> Proposed Authority Action
+              </div>
+              <p style="font-size:0.82rem; color:#e2e8f0; margin-top:0.3rem;">
+                Trigger inter-state coordination memo between Bihar & Gujarat labour commissioners 30 days prior to peak season.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         8. AUTHORITY COMMAND CENTER
+    ========================================================= -->
+    <section id="authority" class="section-wrap alt-surface">
+      <div class="content-container">
+        <div class="section-header">
+          <span class="section-category"><i class="fa-solid fa-landmark"></i> GOVTECH WELFARE PLANNING</span>
+          <h2 class="section-title">Migration Intelligence Command Center</h2>
+          <p class="section-subtitle">Aggregated planning signals for state labour departments and central social security administrators.</p>
+        </div>
+
+        <!-- 4 KPI Cards -->
+        <div class="command-kpi-grid">
+          <div class="kpi-card">
+            <div class="kpi-icon-wrap"><i class="fa-solid fa-person-walking"></i></div>
+            <div>
+              <div class="kpi-value" id="kpiTotalEvents">4,820</div>
+              <div class="kpi-label">MIGRATION EVENTS (DEMO)</div>
+            </div>
+          </div>
+
+          <div class="kpi-card blue">
+            <div class="kpi-icon-wrap"><i class="fa-solid fa-route"></i></div>
+            <div>
+              <div class="kpi-value" id="kpiActiveCorridors">27</div>
+              <div class="kpi-label">ACTIVE CORRIDORS</div>
+            </div>
+          </div>
+
+          <div class="kpi-card emerald">
+            <div class="kpi-icon-wrap"><i class="fa-solid fa-arrow-trend-up"></i></div>
+            <div>
+              <div class="kpi-value" id="kpiEmergingCorridors">8</div>
+              <div class="kpi-label">EMERGING CORRIDORS</div>
+            </div>
+          </div>
+
+          <div class="kpi-card indigo">
+            <div class="kpi-icon-wrap"><i class="fa-solid fa-city"></i></div>
+            <div>
+              <div class="kpi-value" id="kpiHighRegions">6</div>
+              <div class="kpi-label">HIGH ACTIVITY REGIONS</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Table & AI Signals Split -->
+        <div class="command-split-grid">
+          <!-- Left: Top Corridors Table -->
+          <div class="command-panel-card">
+            <div class="cpc-header">
+              <div class="cpc-title"><i class="fa-solid fa-table-list" style="color:var(--saffron);"></i> Top Inter-State Corridors</div>
+              <span class="demo-chip">DEMO DATA</span>
+            </div>
+
+            <div class="data-table-wrap">
+              <table class="corridor-table">
+                <thead>
+                  <tr>
+                    <th>Corridor</th>
+                    <th>Destination</th>
+                    <th>Primary Sector</th>
+                    <th>Volume</th>
+                    <th>Trend</th>
+                  </tr>
+                </thead>
+                <tbody id="commandCorridorsTableBody">
+                  <!-- Populated dynamically by JS -->
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <!-- Right: AI Planning Signals -->
+          <div class="command-panel-card">
+            <div class="cpc-header">
+              <div class="cpc-title"><i class="fa-solid fa-brain-circuit" style="color:var(--blue-light);"></i> AI Planning Signals</div>
+              <span class="demo-chip">PROTOTYPE AI</span>
+            </div>
+
+            <div class="ai-signals-list" id="aiSignalsList">
+              <!-- Populated dynamically by JS -->
+            </div>
+          </div>
+        </div>
+
+        <!-- What-if Migration Scenario Simulator -->
+        <div class="command-panel-card what-if-scenario-card" id="whatIfScenarioCard" style="margin-top:2.25rem;">
+          <div class="cpc-header" style="flex-wrap:wrap; gap:0.75rem; align-items:flex-start;">
+            <div>
+              <div class="section-category" style="margin-bottom:0.35rem;"><i class="fa-solid fa-sliders"></i> PROTOTYPE SIMULATION</div>
+              <h3 class="cpc-title" style="font-size:1.25rem;">What-if Migration Scenario</h3>
+              <p style="font-size:0.85rem; color:var(--text-secondary); margin-top:0.25rem;">
+                Simulate a sudden increase in migration volume for planning purposes.
+              </p>
+            </div>
+            <span class="demo-chip"><i class="fa-solid fa-flask"></i> SYNTHETIC DEMONSTRATION DATA</span>
+          </div>
+
+          <!-- Slider Controls -->
+          <div class="whatif-slider-wrap" style="background:rgba(0,0,0,0.22); border:1px solid rgba(255,255,255,0.08); border-radius:var(--radius-md); padding:1.25rem 1.5rem; margin:1.25rem 0;">
+            <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:0.5rem; margin-bottom:0.75rem;">
+              <label for="whatIfVolumeSlider" style="font-size:0.85rem; font-weight:700; color:#fff;">
+                <i class="fa-solid fa-users text-saffron"></i> Simulated Migrant Volume:
+              </label>
+              <div style="display:flex; align-items:center; gap:0.5rem;">
+                <span id="whatIfVolumeBadge" style="font-size:1.1rem; font-weight:800; color:var(--saffron); font-family:'JetBrains Mono', monospace;">15,000 workers</span>
+                <span id="whatIfSurgePercent" style="font-size:0.75rem; color:var(--emerald-light); background:rgba(16,185,129,0.12); padding:0.15rem 0.5rem; border-radius:var(--radius-full); font-weight:600;">+210% Inflow</span>
+              </div>
+            </div>
+
+            <input type="range" id="whatIfVolumeSlider" min="5000" max="50000" step="1000" value="15000" style="width:100%; accent-color:var(--saffron); cursor:pointer; height:6px;">
+
+            <div style="display:flex; justify-content:space-between; font-size:0.72rem; color:var(--text-muted); margin-top:0.5rem; flex-wrap:wrap; gap:0.25rem;">
+              <span>5,000 workers (Baseline)</span>
+              <span>25,000 workers (Moderate Surge)</span>
+              <span>50,000 workers (Peak Surge)</span>
+            </div>
+          </div>
+
+          <!-- 4 Dynamic Indicators Grid -->
+          <div class="whatif-indicators-grid" style="display:grid; grid-template-columns:repeat(auto-fit, minmax(220px, 1fr)); gap:1rem; margin-top:1.25rem;">
+            <!-- Indicator 1 -->
+            <div class="whatif-indicator-box" style="background:rgba(255,255,255,0.03); border:1px solid rgba(255,255,255,0.07); border-radius:var(--radius-md); padding:1rem;">
+              <span style="font-size:0.72rem; color:var(--text-muted); text-transform:uppercase; font-weight:700; letter-spacing:0.5px; display:block; margin-bottom:0.35rem;">
+                <i class="fa-solid fa-route" style="color:var(--blue-light);"></i> 1. Estimated Corridor Activity
+              </span>
+              <div id="whatIfCorridorActivity" style="font-size:0.95rem; font-weight:800; color:#fff; margin-bottom:0.25rem;">+15% to +30% Volume Drift</div>
+              <span id="whatIfCorridorBadge" style="font-size:0.72rem; color:var(--blue-light); background:rgba(96,165,250,0.12); padding:0.15rem 0.45rem; border-radius:4px; font-weight:600;">Low / Moderate</span>
+            </div>
+
+            <!-- Indicator 2 -->
+            <div class="whatif-indicator-box" style="background:rgba(255,255,255,0.03); border:1px solid rgba(255,255,255,0.07); border-radius:var(--radius-md); padding:1rem;">
+              <span style="font-size:0.72rem; color:var(--text-muted); text-transform:uppercase; font-weight:700; letter-spacing:0.5px; display:block; margin-bottom:0.35rem;">
+                <i class="fa-solid fa-gauge-high" style="color:var(--saffron);"></i> 2. Planning Pressure
+              </span>
+              <div id="whatIfPlanningPressure" style="font-size:0.95rem; font-weight:800; color:#fff; margin-bottom:0.25rem;">Normal Buffer Capacity</div>
+              <span id="whatIfPressureBadge" style="font-size:0.72rem; color:var(--emerald-light); background:rgba(16,185,129,0.12); padding:0.15rem 0.45rem; border-radius:4px; font-weight:600;">Low / Manageable</span>
+            </div>
+
+            <!-- Indicator 3 -->
+            <div class="whatif-indicator-box" style="background:rgba(255,255,255,0.03); border:1px solid rgba(255,255,255,0.07); border-radius:var(--radius-md); padding:1rem;">
+              <span style="font-size:0.72rem; color:var(--text-muted); text-transform:uppercase; font-weight:700; letter-spacing:0.5px; display:block; margin-bottom:0.35rem;">
+                <i class="fa-solid fa-hospital-user" style="color:var(--emerald-light);"></i> 3. Service Capacity Response
+              </span>
+              <div id="whatIfServiceCapacity" style="font-size:0.95rem; font-weight:800; color:#fff; margin-bottom:0.25rem;">Standard Transit Desks Sufficient</div>
+              <span id="whatIfCapacityBadge" style="font-size:0.72rem; color:var(--emerald-light); background:rgba(16,185,129,0.12); padding:0.15rem 0.45rem; border-radius:4px; font-weight:600;">Standard Operations</span>
+            </div>
+
+            <!-- Indicator 4 -->
+            <div class="whatif-indicator-box" style="background:rgba(255,255,255,0.03); border:1px solid rgba(255,255,255,0.07); border-radius:var(--radius-md); padding:1rem;">
+              <span style="font-size:0.72rem; color:var(--text-muted); text-transform:uppercase; font-weight:700; letter-spacing:0.5px; display:block; margin-bottom:0.35rem;">
+                <i class="fa-solid fa-bell" style="color:#a78bfa;"></i> 4. Emerging Corridor Signal
+              </span>
+              <div id="whatIfEmergingSignal" style="font-size:0.95rem; font-weight:800; color:#fff; margin-bottom:0.25rem;">Bihar → Gujarat (Textile Cluster)</div>
+              <span id="whatIfSignalBadge" style="font-size:0.72rem; color:#a78bfa; background:rgba(167,139,250,0.12); padding:0.15rem 0.45rem; border-radius:4px; font-weight:600;">Steady Drift</span>
+            </div>
+          </div>
+
+          <!-- Recommendation Planning Message -->
+          <div class="whatif-recommendation-box" style="background:rgba(249,115,22,0.08); border:1px solid rgba(249,115,22,0.25); border-radius:var(--radius-md); padding:1rem 1.25rem; margin-top:1.25rem; display:flex; align-items:flex-start; gap:0.75rem;">
+            <i class="fa-solid fa-lightbulb text-saffron" style="font-size:1.1rem; margin-top:0.15rem;"></i>
+            <div>
+              <strong style="font-size:0.82rem; text-transform:uppercase; color:var(--saffron-light); letter-spacing:0.5px; display:block;">Planning Recommendation</strong>
+              <p id="whatIfRecommendationText" style="font-size:0.85rem; color:#e2e8f0; margin-top:0.25rem; line-height:1.5;">
+                Standard baseline monitoring is active. Consider reviewing service capacity along high-volume corridors if seasonal patterns align.
+              </p>
+            </div>
+          </div>
+
+          <div style="font-size:0.75rem; color:var(--text-muted); margin-top:1rem; text-align:center;">
+            <i class="fa-solid fa-circle-info"></i> Planning scenario — not a live government forecast. Prototype simulation using synthetic demonstration data.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         9. PRIVACY-PRESERVING ARCHITECTURE
+    ========================================================= -->
+    <section id="privacy" class="section-wrap">
+      <div class="content-container">
+        <div class="section-header">
+          <span class="section-category"><i class="fa-solid fa-lock"></i> TRUST & SECURITY</span>
+          <h2 class="section-title">Privacy by Design</h2>
+          <p class="section-subtitle">How PravasiShram AI decouples identity from movement events using cryptographic disassociation and DPDP Act 2023 principles.</p>
+        </div>
+
+        <div class="privacy-arch-container">
+          <div class="flow-diagram-container" style="background:transparent; border:none; padding:0;">
+            <div class="flow-nodes-track">
+              <div class="flow-node">
+                <div class="fn-icon"><i class="fa-solid fa-user"></i></div>
+                <span class="fn-label">Worker</span>
+                <span class="fn-sub">Self-asserted</span>
+              </div>
+              <i class="fa-solid fa-arrow-right flow-arrow"></i>
+
+              <div class="flow-node highlight">
+                <div class="fn-icon"><i class="fa-solid fa-file-contract"></i></div>
+                <span class="fn-label">Consent</span>
+                <span class="fn-sub">Granular & logged</span>
+              </div>
+              <i class="fa-solid fa-arrow-right flow-arrow"></i>
+
+              <div class="flow-node">
+                <div class="fn-icon"><i class="fa-solid fa-filter"></i></div>
+                <span class="fn-label">Minimum Data</span>
+                <span class="fn-sub">Zero continuous GPS</span>
+              </div>
+              <i class="fa-solid fa-arrow-right flow-arrow"></i>
+
+              <div class="flow-node highlight">
+                <div class="fn-icon"><i class="fa-solid fa-key"></i></div>
+                <span class="fn-label">Protected Event</span>
+                <span class="fn-sub">Pseudonymized</span>
+              </div>
+              <i class="fa-solid fa-arrow-right flow-arrow"></i>
+
+              <div class="flow-node">
+                <div class="fn-icon"><i class="fa-solid fa-cubes-stacked"></i></div>
+                <span class="fn-label">Aggregation</span>
+                <span class="fn-sub">k-Anonymity (n&gt;50)</span>
+              </div>
+              <i class="fa-solid fa-arrow-right flow-arrow"></i>
+
+              <div class="flow-node">
+                <div class="fn-icon"><i class="fa-solid fa-chart-network"></i></div>
+                <span class="fn-label">Macro Intel</span>
+                <span class="fn-sub">Corridor signals</span>
+              </div>
+              <i class="fa-solid fa-arrow-right flow-arrow"></i>
+
+              <div class="flow-node">
+                <div class="fn-icon"><i class="fa-solid fa-hand-holding-heart"></i></div>
+                <span class="fn-label">Planning</span>
+                <span class="fn-sub">Targeted welfare</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- 6 Privacy Principles -->
+          <div class="arch-principles-grid">
+            <div class="principle-card">
+              <i class="fa-solid fa-signature"></i>
+              <h4>1. Explicit Consent</h4>
+              <p>Voluntary participation at check-in with clear disclosure of purpose and no punitive lockouts.</p>
+            </div>
+
+            <div class="principle-card">
+              <i class="fa-solid fa-compress"></i>
+              <h4>2. Data Minimisation</h4>
+              <p>We extract only the migration event (From, To, Trade). No background telemetry or device fingerprinting.</p>
+            </div>
+
+            <div class="principle-card">
+              <i class="fa-solid fa-crosshairs"></i>
+              <h4>3. Purpose Limitation</h4>
+              <p>Information is strictly limited to welfare planning and cannot be repurposed for personal tracking, tax enforcement, or commercial sharing.</p>
+            </div>
+
+            <div class="principle-card">
+              <i class="fa-solid fa-user-lock"></i>
+              <h4>4. Strict Access Control</h4>
+              <p>Disaggregated data is inaccessible to field officers; only aggregated statistics are published.</p>
+            </div>
+
+            <div class="principle-card">
+              <i class="fa-solid fa-chart-pie"></i>
+              <h4>5. Aggregated Analytics</h4>
+              <p>Heatmaps only render corridor paths when minimum threshold events (k &gt; 50) are achieved.</p>
+            </div>
+
+            <div class="principle-card">
+              <i class="fa-solid fa-trash-can-arrow-up"></i>
+              <h4>6. 1-Click Consent Withdrawal</h4>
+              <p>Citizens can withdraw consent at any time, initiating automated cryptographic erasure.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         10. LOW-TECH ACCESS CHANNEL CONCEPT
+    ========================================================= -->
+    <section id="channels" class="section-wrap alt-surface">
+      <div class="content-container">
+        <div class="section-header">
+          <span class="section-category"><i class="fa-solid fa-universal-access"></i> EQUITABLE INCLUSION</span>
+          <h2 class="section-title">Designed for Real-World Access</h2>
+          <p class="section-subtitle">Recognizing that unorganized workers experience varied connectivity, literacy, and device accessibility.</p>
+        </div>
+
+        <div style="text-align:center; margin-bottom:2rem;">
+          <span class="demo-chip"><i class="fa-solid fa-circle-info"></i> Proposed access channels • Future deployment concepts</span>
+        </div>
+
+        <div class="channels-grid">
+          <div class="channel-card">
+            <div class="cc-icon"><i class="fa-solid fa-globe"></i></div>
+            <h4>Mobile Web Portal</h4>
+            <p>PWA-enabled responsive mobile web with multi-dialect support and offline sync capability.</p>
+          </div>
+
+          <div class="channel-card">
+            <div class="cc-icon"><i class="fa-solid fa-microphone-lines"></i></div>
+            <h4>Speech & IVR</h4>
+            <p>Toll-free conversational IVR allowing workers to update location in regional mother tongues.</p>
+          </div>
+
+          <div class="channel-card">
+            <div class="cc-icon"><i class="fa-solid fa-comment-sms"></i></div>
+            <h4>SMS Check-in</h4>
+            <p>Lightweight structured SMS triggers for 2G feature phones without requiring internet access.</p>
+          </div>
+
+          <div class="channel-card">
+            <div class="cc-icon"><i class="fa-solid fa-hands-holding-child"></i></div>
+            <h4>Assisted Check-in</h4>
+            <p>Facilitated check-in desks at Common Service Centres (CSCs), railway hubs, and Shramik Sahayata Kendras.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         11. GUIDED 2-MINUTE DEMO JOURNEY
+    ========================================================= -->
+    <section id="demo" class="section-wrap">
+      <div class="content-container">
+        <div class="section-header">
+          <span class="section-category"><i class="fa-solid fa-route"></i> INTERACTIVE EVALUATION</span>
+          <h2 class="section-title">Guided 2-Minute Demo Journey</h2>
+          <p class="section-subtitle">Walk through the end-to-end flow of how a single worker check-in generates privacy-preserving public intelligence.</p>
+        </div>
+
+        <div class="demo-wizard-card">
+          <!-- Stepper Dots -->
+          <div class="demo-progress-bar">
+            <div class="dp-step-node active" id="demoNode1">1</div>
+            <div class="dp-step-node" id="demoNode2">2</div>
+            <div class="dp-step-node" id="demoNode3">3</div>
+            <div class="dp-step-node" id="demoNode4">4</div>
+            <div class="dp-step-node" id="demoNode5">5</div>
+            <div class="dp-step-node" id="demoNode6">6</div>
+            <div class="dp-step-node" id="demoNode7">7</div>
+          </div>
+
+          <!-- Dynamic Stage Card -->
+          <div class="demo-stage-screen">
+            <div class="dss-step-label" id="demoStageLabel">STEP 1 OF 7 • GUIDED JUDGE JOURNEY</div>
+            <h3 class="dss-title" id="demoStageTitle">1. Voluntary Worker Check-in</h3>
+            <p class="dss-desc" id="demoStageDesc">
+              Ramesh, a textile worker moving from Patna (Bihar) to Surat (Gujarat), triggers a voluntary 30-second check-in via speech or simple form.
+            </p>
+          </div>
+
+          <!-- Controls -->
+          <div class="demo-nav-controls">
+            <button class="btn-secondary" id="btnDemoPrev"><i class="fa-solid fa-arrow-left"></i> Previous Step</button>
+            <div style="display:flex; align-items:center; gap:0.75rem;">
+              <span id="demoProgressText" style="font-weight:700; color:#fff; font-size:0.9rem;">1 / 7</span>
+              <button class="tool-btn" id="btnDemoAutoPlay" style="padding:0.5rem 1rem;"><i class="fa-solid fa-play"></i> Auto-Play Demo</button>
+            </div>
+            <button class="btn-primary" id="btnDemoNext">Next Step <i class="fa-solid fa-arrow-right"></i></button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         12. ABOUT / METHODOLOGY & RUBRIC ALIGNMENT
+    ========================================================= -->
+    <section id="about" class="section-wrap alt-surface">
+      <div class="content-container">
+        <div class="section-header">
+          <span class="section-category"><i class="fa-solid fa-award"></i> HACKATHON RUBRIC ALIGNMENT</span>
+          <h2 class="section-title">Methodology & Submission Criteria</h2>
+          <p class="section-subtitle">How PravasiShram AI directly addresses the evaluation standards for Problem Statement 1.</p>
+        </div>
+
+        <div class="arch-principles-grid">
+          <div class="principle-card">
+            <h4 style="color:var(--saffron-light);">🎯 Relevance</h4>
+            <p>Directly answers Problem Statement 1: "Migration Worker Tracking in eShram" through privacy-preserving episodic check-ins.</p>
+          </div>
+
+          <div class="principle-card">
+            <h4 style="color:var(--saffron-light);">💡 Innovation</h4>
+            <p>Pioneers the paradigm: "Track the migration event, not the person", replacing continuous personal tracking with consented event extraction.</p>
+          </div>
+
+          <div class="principle-card">
+            <h4 style="color:var(--saffron-light);">⚙️ Feasibility</h4>
+            <p>Built with lightweight, standard web tech requiring minimal device resources and low bandwidth.</p>
+          </div>
+
+          <div class="principle-card">
+            <h4 style="color:var(--saffron-light);">📈 Impact</h4>
+            <p>Enables state labour departments to anticipate seasonal corridor surges and provision portable benefits before crises arise.</p>
+          </div>
+
+          <div class="principle-card">
+            <h4 style="color:var(--saffron-light);">🤝 User Experience</h4>
+            <p>Speech-to-Intent AI eliminates form complexity, supporting low-literacy workers across multiple regional languages.</p>
+          </div>
+
+          <div class="principle-card">
+            <h4 style="color:var(--saffron-light);">🛡️ Data Security</h4>
+            <p>Strict data minimisation, purpose limitation, and disassociated aggregation aligned with India's DPDP Act 2023.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- =========================================================
+       FOOTER
+  ========================================================= -->
+  <footer class="master-footer">
+    <div class="content-container">
+      <div class="footer-top-grid">
+        <div>
+          <div class="footer-brand-title">PRAVASISHRAM <span style="color:var(--saffron);">AI</span></div>
+          <div class="footer-tagline">“Track the migration event, not the person.”</div>
+          <p style="font-size:0.8rem; color:var(--text-muted); line-height:1.55;">
+            Consent-driven migration intelligence for better welfare planning. Concept prototype engineered for the Digital Shram Sankalp Ideation Hackathon.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h5>Core Experiences</h5>
+          <ul class="footer-links">
+            <li><a href="#worker">Worker Check-in</a></li>
+            <li><a href="#consent">Consent Center</a></li>
+            <li><a href="#timeline">Migration Timeline</a></li>
+            <li><a href="#intelligence">Migration Intelligence</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h5>Governance & Trust</h5>
+          <ul class="footer-links">
+            <li><a href="#authority">Command Center</a></li>
+            <li><a href="#forecast">Corridor Forecast</a></li>
+            <li><a href="#privacy">Privacy by Design</a></li>
+            <li><a href="#demo">2-Minute Demo</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h5>Hackathon Submission</h5>
+          <p style="font-size:0.8rem; color:var(--text-secondary); margin-bottom:0.75rem;">
+            Problem Statement 1: "Migration Worker Tracking in eShram"
+          </p>
+          <span class="demo-chip">PROTOTYPE DEMONSTRATION</span>
+        </div>
+      </div>
+
+      <div class="footer-disclaimer-box">
+        <strong>DISCLAIMER & TRANSPARENCY NOTICE:</strong> This application is an ideation concept prototype developed for demonstration and evaluation purposes. All numbers, worker profiles, and corridors presented are synthetic demonstration data. This prototype is not an official eShram portal, does not access live government databases or APIs, and does not create legal government records.
+      </div>
+    </div>
+  </footer>
+
+  <!-- =========================================================
+       MODALS
+  ========================================================= -->
+  <!-- Data Use Review Modal -->
+  <div class="modal-backdrop" id="dataUseModal">
+    <div class="modal-dialog">
+      <div class="md-header">
+        <h4 class="md-title"><i class="fa-solid fa-file-shield text-saffron"></i> Data Use & Privacy Disclosure</h4>
+        <button class="btn-close-modal" onclick="closeModal('dataUseModal')"><i class="fa-solid fa-xmark"></i></button>
+      </div>
+      <div style="font-size:0.88rem; color:var(--text-secondary); line-height:1.6;">
+        <p style="margin-bottom:1rem;">
+          Under the proposed PravasiShram AI framework, voluntary migration check-ins are handled under strict privacy-by-design standards:
+        </p>
+        <ul style="padding-left:1.25rem; margin-bottom:1rem;">
+          <li style="margin-bottom:0.5rem;"><strong>No Continuous Tracking:</strong> The system logs only single episodic transit events. No GPS background processes exist.</li>
+          <li style="margin-bottom:0.5rem;"><strong>Identity Disassociation:</strong> Once an event is confirmed, individual identifiers are stripped before aggregation.</li>
+          <li style="margin-bottom:0.5rem;"><strong>Purpose Limitation:</strong> Aggregated corridor data is used exclusively to assist destination welfare capacity planning.</li>
+          <li style="margin-bottom:0.5rem;"><strong>Retention & Purge:</strong> Episodic event entries have an automated 90-day time-to-live (TTL) lifecycle.</li>
+        </ul>
+        <div style="text-align:right; margin-top:1.5rem;">
+          <button class="btn-primary" style="padding:0.5rem 1.25rem; font-size:0.85rem;" onclick="closeModal('dataUseModal')">Understood</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Withdraw Consent Confirmation Modal -->
+  <div class="modal-backdrop" id="withdrawConfirmModal">
+    <div class="modal-dialog">
+      <div class="md-header">
+        <h4 class="md-title" style="color:var(--rose);"><i class="fa-solid fa-triangle-exclamation"></i> Withdraw Consent?</h4>
+        <button class="btn-close-modal" onclick="closeModal('withdrawConfirmModal')"><i class="fa-solid fa-xmark"></i></button>
+      </div>
+      <div style="font-size:0.88rem; color:var(--text-secondary); line-height:1.6;">
+        <p style="margin-bottom:1rem;">
+          Are you sure you want to withdraw consent for voluntary migration event sharing?
+        </p>
+        <p style="margin-bottom:1rem; color:#fff;">
+          <strong>What will happen:</strong>
+        </p>
+        <ul style="padding-left:1.25rem; margin-bottom:1.5rem;">
+          <li>Your current demonstration check-in will be marked as inactive.</li>
+          <li>No future migration events will be factored into corridor intelligence.</li>
+          <li>You may re-enable consent at any time without penalty.</li>
+        </ul>
+        <div style="display:flex; justify-content:flex-end; gap:0.75rem;">
+          <button class="btn-secondary" style="padding:0.5rem 1.2rem; font-size:0.85rem;" onclick="closeModal('withdrawConfirmModal')">Cancel</button>
+          <button class="btn-withdraw" style="padding:0.5rem 1.2rem; font-size:0.85rem;" id="btnConfirmWithdrawAction">Yes, Withdraw Consent</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification Container -->
+  <div class="toast-container" id="toastContainer"></div>
+
+  <!-- Scripts -->
+  <script src="js/app.js"></script>
+</body>
+</html>
